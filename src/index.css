@@ -155,7 +155,7 @@ header h1 {
 }
 .contenedor-presupuesto {
     margin-top: -5rem;
-
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -187,6 +187,13 @@ header h1 {
     text-align: center;
 }
 
+/* Estilo para pantallas más pequeñas */
+@media only screen and (max-width: 600px) {
+    .formulario input[type="text"].nuevo-presupuesto, 
+    .formulario input[type="number"].nuevo-presupuesto {
+        font-size: 2rem; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
+}
 .contenedor-presupuesto svg {
     width: 25rem;
 }
@@ -340,6 +347,7 @@ main {
     left: 0;
     right: 0;
     bottom: 0;
+    margin: 0 auto;
 }
 .modal .cerrar-modal {
     position: absolute;
